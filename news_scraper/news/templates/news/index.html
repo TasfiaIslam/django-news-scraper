@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>News</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/heroic-features.csss' %}" rel="stylesheet">
+  <style>
+
+    body{
+      background-color: rgb(211, 194, 149);
+    }
+    
+    footer{
+      background-color:rgb(31, 75, 90);
+      height: 30px;
+    }
+
+    #int_jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1584463699043-740c40f783d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80.jpg");
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: rgb(250, 230, 230);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+   #sports_jumbotron{
+    background-image: url("https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80.jpg");
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: rgb(250, 230, 230);
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+  </style>
+</head>
+
+<body>
+  
+  {%  include 'news/navbar.html' %}
+
+  <!-- Page Content -->
+  <div class="container">
+    
+    <!-- Jumbotron Header -->
+    
+    <!-- Page Features -->
+    <br>
+
+    <div class="jumbotron jumbotron-fluid" id="int_jumbotron">
+      <div class="container">
+        <h1 class="display-4">International News</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="row text-center my-1">
+      {% for new, des , i, url in mylist2 %}
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="{{ i }}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">{{ new }}</h4>
+            <p class="card-text">{{ des }}</p>
+          </div>
+          <div class="card-footer">
+            <a href="{{ url }}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="sports_jumbotron">
+      <div class="container">
+        <h1 class="display-4">Sports News</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      
+      {% for heading, para , img, url in mylist %}
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="{{ img }}" alt="">
+            <div class="card-body">
+              <h4 class="card-title">{{ heading }}</h4>
+              <p class="card-text">{{ para }}</p>
+            </div>
+            <div class="card-footer">
+              <a href="{{ url }}" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

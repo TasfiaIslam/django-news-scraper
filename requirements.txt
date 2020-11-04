@@ -1,0 +1,13 @@
+asgiref==3.2.10
+beautifulsoup4==4.9.3
+certifi==2020.6.20
+chardet==3.0.4
+Django==3.1.2
+idna==2.10
+newsapi-python==0.2.6
+python-decouple==3.3
+pytz==2020.1
+requests==2.24.0
+soupsieve==2.0.1
+sqlparse==0.4.1
+urllib3==1.25.11
