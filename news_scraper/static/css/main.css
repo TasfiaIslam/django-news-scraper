@@ -1,0 +1,66 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/templates/heroic-features)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body {
+  background-color: #f8f1f1;
+}
+
+.card{
+  box-shadow: 4px 8px 8px -2px rgba(197,178,178,0.51);
+  -webkit-box-shadow: 4px 8px 8px -2px rgba(197,178,178,0.51);
+  -moz-box-shadow: 4px 8px 8px -2px rgba(197,178,178,0.51);
+}
+
+#int_jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1584463699043-740c40f783d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80.jpg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  color: rgb(190, 141, 141);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#sports_jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80.jpg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  color: rgb(250, 230, 230);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-title{
+  color: #c13eb6;
+}
+
+.read-more-btn{
+  background-color: #914196 !important;
+  border: none !important;
+}
+
+.navbar{
+  background-color: #e8dddd;
+  font-weight: bold;
+  box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
+ -moz-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
+}
+
+/* .img-container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
