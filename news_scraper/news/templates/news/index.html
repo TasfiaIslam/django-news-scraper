@@ -101,10 +101,10 @@
 
     <div class="row text-center">
 
-      {% for heading, para , img, url in mylist %}
+      {% for heading, para , i, url in mylist %}
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="{{ img }}" alt="">
+          <img class="card-img-top" src="{{ i }}" alt="">
           <div class="card-body">
             <h4 class="card-title">{{ heading }}</h4>
             <p class="card-text">{{ para }}</p>
