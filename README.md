@@ -26,8 +26,9 @@ $ python manage.py runserver
 * Collect Local Sports news using BeautifulSoup, Requests
 
 ## How it looks like
-![Screenshot](Screenshot_4.png)
-![Screenshot](Screenshot_2.png)
+![Screenshot](Screenshot1-2021-05-21.png)
+![Screenshot](Screenshot2-2021-05-21.png)
+![Screenshot](Screenshot3-2021-05-21.png)
 
 
 ## Contributing

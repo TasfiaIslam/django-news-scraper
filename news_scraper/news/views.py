@@ -37,11 +37,11 @@ def home(request):
 
         for j in range(len(img_divs)):
             img_section = img_divs[j]
-
+    
             img = img_section.a.img
-            img_url = img['src']
+            img_url = img['src']  
             images.append(img_url)
-
+            
     mylist = zip(headings, paras, images, detail_urls)
 
     api = NewsApiClient(api_key=config('API_KEY'))

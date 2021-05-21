@@ -13,54 +13,80 @@ body {
   -moz-box-shadow: 4px 8px 8px -2px rgba(197,178,178,0.51);
 }
 
+.card-img-top{
+  height: 150px;
+}
+
 #int_jumbotron {
-  background-image: url("https://images.unsplash.com/photo-1584463699043-740c40f783d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80.jpg");
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  color: rgb(190, 141, 141);
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+  position: relative;
+  padding: 0;
+}
+
+#int_jumbotron img{
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.int-jumbotron-content{
+  position: absolute;
+  z-index: 3; 
+  width: 80%;
+  left: 60px;
+  top: 5em;
 }
 
 #sports_jumbotron {
-  background-image: url("https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80.jpg");
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  color: rgb(250, 230, 230);
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+  position: relative;
+  padding: 0;
+}
+
+#sports_jumbotron img{
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.sports-jumbotron-content{
+  position: absolute;
+  z-index: 3; 
+  width: 80%;
+  left: 60px;
+  top: 5em;
 }
 
 .card-title{
-  color: #c13eb6;
+  color: #2F4865;
+  font-weight: 500;
 }
 
 .read-more-btn{
-  background-color: #914196 !important;
+  background-color: #2F4865 !important;
   border: none !important;
 }
 
 .navbar{
-  background-color: #e8dddd;
+  background-color: #020C18;
   font-weight: bold;
   box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
  -webkit-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
  -moz-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
 }
 
-/* .img-container{
-  position: relative;
-  text-align: center;
-  color: white;
+.navbar a{
+  color: #fff !important;
 }
-
-.banner-centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
